@@ -2,7 +2,6 @@ import telebot
 
 bot = telebot.TeleBot('6748839980:AAHlgIwY4tBefU3xNPFxVoeNRL9r9O3jG84')
 
-
 @bot.message_handler(commands=['start'])
 def main(message):
     bot.send_message(message.chat.id, 'Привет! Рада видеть тебя здесь. Какой бы дизайн ты хотел?)',
